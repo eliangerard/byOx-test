@@ -26,7 +26,7 @@ function App() {
       redirect: "follow"
     };
     setIsLoading(true);
-    fetch("http://localhost:5000/analyze", requestOptions)
+    fetch("http://47.254.124.205/byox/analyze", requestOptions)
       .then(response => response.json())
       .then(result => {
         e.target.value = null;
