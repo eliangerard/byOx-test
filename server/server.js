@@ -3,8 +3,8 @@ const path = require('path');
 
 const app = express();
 
-// Sirve los archivos estáticos de la carpeta dist en la raíz
-app.use('/', express.static(path.join("../", 'dist')));
+// Serve all the files in the 'public' folder
+app.use('/', express.static(path.join(__dirname, 'public')));
 
 const PORT = process.env.PORT || 3001;
 
